@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ćwiczenie 3</title>
-    <style>
-      .bg-aqua {
-        background-color: aqua;
-      }
-      .bg-red {
-        background-color: red;
-      }
-      .bg-purple {
-        background-color: rebeccapurple;
-      }
-      .bg-yellow {
-        background-color: yellow;
-      }
-      .bg-lime {
-        background-color: greenyellow;
-      }
-      .row * {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-      }
-      .squares-grid {
-        padding: 5px;
-        display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(2, 100px);
-        gap: 15px;
-      }
-      .squares-grid * {
-        width: 100px;
-        height: 100px;
-      }
-      .squares-grid > :nth-child(3) {
-        grid-column-start: 1;
-        grid-column-end: 2;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="squares">
-      <div class="row">
-        <div class="bg-aqua"></div>
-        <div class="bg-red"></div>
-      </div>
-      <div class="row">
-        <div class="bg-purple"></div>
-        <div class="bg-yellow"></div>
-        <div class="bg-lime"></div>
-      </div>
-      <div class="squares-grid">
-        <div class="bg-aqua"></div>
-        <div class="bg-red"></div>
-        <div class="bg-purple"></div>
-        <div class="bg-yellow"></div>
-        <img class="bg-lime" src="doggo_eyebrows.png" alt="doggo_eyebrows" />
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ćwiczenie 3</title>
+        <style>
+            .bg-aqua {
+                background-color: aqua;
+            }
+            .bg-red {
+                background-color: red;
+            }
+            .bg-purple {
+                background-color: rebeccapurple;
+            }
+            .bg-yellow {
+                background-color: yellow;
+            }
+            .bg-lime {
+                background-color: greenyellow;
+            }
+            .row * {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+            }
+            .squares-grid {
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: repeat(2, 100px);
+                gap: 15px;
+            }
+            .squares-grid * {
+                width: 100px;
+                height: 100px;
+            }
+            .squares-grid > :nth-child(3) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="squares">
+            <div class="row">
+                <div class="bg-aqua"></div>
+                <div class="bg-red"></div>
+            </div>
+            <div class="row">
+                <div class="bg-purple"></div>
+                <div class="bg-yellow"></div>
+                <div class="bg-lime"></div>
+                <!-- <img
+                    class="bg-lime"
+                    src="doggo_eyebrows.png"
+                    alt="doggo_eyebrows"
+                /> -->
+            </div>
+            <div class="squares-grid">
+                <div class="bg-aqua"></div>
+                <div class="bg-red"></div>
+                <div class="bg-purple"></div>
+                <div class="bg-yellow"></div>
+                <img
+                    class="bg-lime"
+                    src="doggo_eyebrows.png"
+                    alt="doggo_eyebrows"
+                />
+            </div>
+        </div>
+    </body>
 </html>
