@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Schronisko Woof</title>
+        <link rel="stylesheet" href="style2.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script2.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/output.png" alt="Logo" />
+                <h2>Burek</h2>
+            </div>
+            <nav>
+                <!-- <div id="Home-button">Home</div> -->
+                <div id="Contact-button">Kontakt</div>
+                <div id="Gallery-button">Galeria</div>
+            </nav>
+            <!-- <div>Adoptuj już teraz</div> -->
+        </header>
+        <main>
+            <article id="home-main-content">
+                <h3>Zaadoptuj psa, zmień jego życie!</h3>
+                <section class="wrapper">
+                    <section class="left">
+                        <img src="./img/hero_img.webp" alt="Cute dog photo" />
+                    </section>
+                    <section class="right">
+                        <p>
+                            Witamy na stronie naszego schroniska! Jesteśmy
+                            miejscem, gdzie psy znajdują opiekę, miłość i szansę
+                            na nowe życie. Każdy pies w naszym schronisku to
+                            wyjątkowa istota czekająca na swojego człowieka i
+                            ciepły dom. Działamy z pasją i zaangażowaniem, by
+                            zapewnić naszym podopiecznym bezpieczeństwo oraz
+                            godne warunki życia. Dzięki wsparciu takich osób jak
+                            Ty, możemy kontynuować naszą misję i dawać nadzieję
+                            na lepsze jutro dla tych wspaniałych czworonogów.
+                            Poznaj naszych mieszkańców i daj im szansę na dom
+                            pełen miłości!
+                        </p>
+                    </section>
+                </section>
+            </article>
+            <article id="contact-main-content">
+                <h3>Kontakt</h3>
+                <form action="#" method="post">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input
+                            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                            title="Błędny adres e-mail"
+                            placeholder="adamnowak@gmail.com"
+                            type="text"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="temat">Temat wiadomości</label>
+                        <select name="temat" id="temat" required>
+                            <option value="Adopcja">Adopcja</option>
+                            <option value="Wsparcie finansowe">
+                                Wsparcie finansowe
+                            </option>
+                            <option value="Wolontariat">Wolontariat</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Wiadomość</label>
+                        <textarea
+                            placeholder="Wpisz swoją wiadomość tutaj!"
+                            name="message"
+                            id="message"
+                            required
+                        ></textarea>
+                    </div>
+                    <input type="submit" value="Wyślij" />
+                </form>
+            </article>
+            <article id="gallery-main-content">
+                <img src="./img/gallery_1.jpg" alt="dog1" />
+                <img src="./img/gallery_2.png" alt="dog2" />
+                <img src="./img/gallery_3.jpg" alt="dog3" />
+                <img src="./img/gallery_4.jpg" alt="dog4" />
+                <img src="./img/gallery_5.webp" alt="dog5" />
+                <img src="./img/gallery_6.webp" alt="dog6" />
+                <video autoplay loop src="./img/gal_7.mp4"></video>
+                <img src="./img/gallery_7.jpg" alt="dog7" />
+            </article>
+        </main>
+        <footer>
+            <p>Krystian Bulanda</p>
+        </footer>
+    </body>
+</html>
